@@ -1,39 +1,27 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "commonjs": true,
+    "es6": true,
+    "node": true
   },
-  "extends": "airbnb",
+  "extends": ["airbnb-base"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 2018
   },
-  "plugins": ["react"],
   "rules": {
     "arrow-parens": "off",
     "comma-dangle": "off",
     "implicit-arrow-linebreak": "off",
     "no-shadow": "off",
-    "import/prefer-default-export": "off",
-    "function-paren-newline": "off",
-    "jsx-quotes": "off",
-    "jsx-a11y/click-events-have-key-events": "warn",
-    "jsx-a11y/no-noninteractive-element-interactions": "warn",
     "no-underscore-dangle": "warn",
-    "import/no-named-as-default": "off",
-    "import/no-named-as-default-member": "off",
-    "react/no-unused-state": "warn",
-    "jsx/one-expression-per-line": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "no-confusing-arrow": "off",
-    "react/jsx-curly-brace-presence": "warn",
-    "space-before-function-paren": "off"
+    "operator-linebreak": "off",
+    "consistent-return": "off",
+    "function-paren-newline": "off",
+    "no-console": "off",
+    "import/no-unresolved": "warn"
   }
 }
